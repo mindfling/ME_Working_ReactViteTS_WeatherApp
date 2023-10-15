@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './App.module.scss'
+import { Container } from './modules/Container/Container';
 
 
 function App() {
@@ -7,9 +8,11 @@ function App() {
 
   return (
     <div className={style.app}>
-      <h1>My Title</h1>
-      <p>{myTitle}</p>
+      <h1>{myTitle}</h1>
       <p>helllo world!!!</p>
+      <Container>
+        container hello 
+      </Container>
     </div>
   )
 }
