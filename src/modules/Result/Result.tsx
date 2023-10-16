@@ -11,11 +11,8 @@ type Props = {
 const Result = (props: Props) => {
   return (
     <div className={style.result}>
-      <p>
-        Город <b>{props.town}</b> 
-        &nbsp; <b>+{props.temp}&#8451;</b> 
-        &nbsp;<ClounIcon/>
-      </p>
+      <p>Город&nbsp;<b>{props.town}</b>&nbsp;<ClounIcon/></p>
+      <p><b>+{props.temp}&#8451;</b></p> 
     </div>
   )
 }
