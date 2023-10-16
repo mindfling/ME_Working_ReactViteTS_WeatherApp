@@ -18,8 +18,6 @@ function App() {
         <h1>{myTitle}</h1>
         <img src={logo} alt="logo vite" />
         <Search />
-        <SearchLogo />
-        <SearchInline />
       </Container>
       <p>Lorem ipsum dolor sit amet consectetur </p>
     </div>

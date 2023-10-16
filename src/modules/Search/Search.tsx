@@ -6,10 +6,10 @@ import MySearchIcon from './MySearchIcon';
 
 
 export const Search = () => {
-  const [search, setSearch] = useState('');
+  const [searchText, setSearch] = useState('');
 
   const handlerSubmit = (e: React.FormEvent<EventTarget>) => {
-    alert('submited');
+    alert('submited search: ' + searchText);
     e.preventDefault();
   }
 
@@ -24,13 +24,13 @@ export const Search = () => {
 
   return (
     <div>
-      <label htmlFor="town">Погода в городе: <b>{search}</b></label>
+      <label htmlFor="town">Погода в городе: <b>{searchText}</b></label>
       <form className={style.search_form} onSubmit={handlerSubmit}>
         <input type="search"
           className={style.search_input}
           title='Ввести город в поле ввода'
           onInput={handlerInput}
-          value={search}
+          value={searchText}
           name="town"
           id="town"
           placeholder='Начните вводить город' />
