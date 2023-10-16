@@ -3,6 +3,7 @@ import style from './App.module.scss'
 import { Container } from './modules/Container/Container';
 import logo from '/vite.svg';
 import { Search } from './modules/Search/Search';
+import { Search as SearchImg} from './modules/SearchImg/Search';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <p>helllo world!!!</p>
 
         <Search />
-        
+        <SearchImg />
       </Container>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
     </div>
