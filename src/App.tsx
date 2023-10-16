@@ -1,9 +1,11 @@
 // import React from 'react'
 import style from './App.module.scss'
-import { Container } from './modules/Container/Container';
-import logo from '/vite.svg';
-import { Search } from './modules/Search/Search';
-import { Search as SearchImg} from './modules/SearchImg/Search';
+import { Container } from './modules/Container/Container'; 
+import logo from './assets/vite.svg';
+
+import { Search as SearchLogo } from './modules/Search/SearchSvgLogo';
+import { Search as SearchInline } from './modules/Search/SearchInline';
+
 
 
 function App() {
@@ -14,12 +16,10 @@ function App() {
       <Container>
         <h1>{myTitle}</h1>
         <img src={logo} alt="logo vite" />
-        <p>helllo world!!!</p>
-
-        <Search />
-        <SearchImg />
+        <SearchLogo />
+        <SearchInline />
       </Container>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <p>Lorem ipsum dolor sit amet consectetur </p>
     </div>
   )
 }
